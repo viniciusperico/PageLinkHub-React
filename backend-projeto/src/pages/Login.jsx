@@ -1,8 +1,10 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { AuthProvider, useAuth } from "./contexts/AuthContext";
+import { AuthProvider, useAuth } from "../contexts/AuthContext";
+import "../assets/styles/Login.css";
 
-function App() {
+
+function Login() {
   const [login, setLogin] = useState("");
   const [senha, setSenha] = useState("");
   const [message, setMessage] = useState("");
@@ -66,4 +68,4 @@ function App() {
   );
 }
 
-export default App;
+export default Login;
