@@ -10,7 +10,10 @@ const AppRoutes = () => {
     <AuthProvider>
       <Router>
         <Routes>
-          <Route path="/" element={<Login />} />
+          <Route 
+          path="/" 
+          element={<TelaInicial />} 
+          />
           <Route
             path="/editar"
             element={
@@ -19,8 +22,10 @@ const AppRoutes = () => {
               </PrivateRoute>
             }
           />
-          <Route path="/telainicial" element={<TelaInicial />} />
-
+          <Route 
+          path="/login" 
+          element={<Login />} 
+          />
         </Routes>
       </Router>
     </AuthProvider>
